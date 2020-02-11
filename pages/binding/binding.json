@@ -1,0 +1,5 @@
+{
+"usingComponents": {
+  "t-button": "../../componets/_button/_button"
+}
+}

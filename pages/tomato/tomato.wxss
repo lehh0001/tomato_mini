@@ -1,0 +1,11 @@
+.container {
+background: #f0f7f6;
+height: 100vh;
+}
+.clock {
+  padding-bottom: 282rpx;
+  padding-bottom: 139rpx;
+}
+.stop {
+  margin-bottom: 48rpx;
+}

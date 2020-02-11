@@ -1,0 +1,18 @@
+<view class="home-container">
+  <scroll-view class="todoList" scroll-y="true">
+    <view class="item" wx:for="{{lists}}" wx:for-index="index" wx:key="{{item.id}}"bindtap='destroyTodo' data-index="{{index}}">
+      <view class="select {{item.finished && 'active'}}"></view>
+      <text>{{item.text}}</text>
+    </view>
+  </scroll-view>
+  <g-button type="change" class="createButton" bindtap="showConfirm" text="创建任务">创建任务</g-button>
+  <view class="tomato-wrapper">
+    <navigator class="tomato" url="/pages/tomato/tomato"> 
+      <g-clock text="点击开始闹钟"></g-clock>
+    </navigator>
+  </view>
+
+  <g-confirm visible="{{visibleConfirm}}" placeholder="我完成了什么"
+  bindconfirm="confirmCreate" bindcancel="hideConfirm"></g-confirm>
+
+</view>

@@ -1,0 +1,13 @@
+<view class="home-container">
+  <scroll-view class="todoList" scroll-y="true">
+    <view class="item">
+      <view class="select {{item.selected && 'active'}}"></view>
+      <text>这里是内容</text>
+    </view>
+  </scroll-view>
+  <t-button type="change" class="createButton">创建任务</t-button>
+  <view class="tomato-wrapper">
+    <view class="tomato"></view>
+    <t-clock text="点击开始闹钟"></t-clock>
+  </view>
+</view>
